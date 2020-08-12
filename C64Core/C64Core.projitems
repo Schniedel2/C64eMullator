@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>5964ea76-2def-4e27-845d-d855ca539975</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>C64Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)C64.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)C64HttpServer\C64Server.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)C64HttpServer\ClientConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)C64HttpServer\HttpHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)C64HttpServer\HttpServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)C64HttpServer\WebSocketHandlerBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)C64HttpServer\WebSocketHandler_null.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\Chip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\CIA1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\CIA2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\CIA_6526.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\ColorRAM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\MemoryChip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\MemoryChip_IO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\OpenIOSlot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\OpenIOSlot_DiskIO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\PLA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\SID.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\SIDVoice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chips\VIC.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CPUs\CPU_6502.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Devices\Datasette.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Devices\Device.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Devices\Joystick.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Devices\Keyboard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)globals.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\BITHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\StreamHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\WaveHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IECBus.cs" />
+  </ItemGroup>
+</Project>
